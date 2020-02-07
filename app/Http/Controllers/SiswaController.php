@@ -12,9 +12,9 @@ class SiswaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-        $siswa = Siswa::find($id);
+        $siswa = Siswa::get();
         return $siswa;
     }
 

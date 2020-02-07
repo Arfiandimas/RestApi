@@ -17,7 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('siswa/{id}', 'SiswaController@index');
+Route::get('siswa', 'SiswaController@index');
 Route::post('siswa', 'SiswaController@create');
 Route::put('/siswa/{id}', 'SiswaController@update');
 Route::delete('/siswa/{id}', 'SiswaController@delete');
